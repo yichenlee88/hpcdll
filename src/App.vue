@@ -1,6 +1,7 @@
 <template>
   <Navbar/>
   <router-view />
+  <Footer/>
   <!-- <div class = "container">  
     <img class = "img-fluid" alt = "Vue logo" src = "./assets/logo.png" />
     <h1 class = "display-1 text-bold"> My App </h1>
@@ -11,11 +12,13 @@
 
 <script>
 import Navbar from "@/views/Navbar.vue";
+import Footer from "@/views/Footer.vue";
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 }
 </script>
@@ -27,6 +30,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .svg-icon {
